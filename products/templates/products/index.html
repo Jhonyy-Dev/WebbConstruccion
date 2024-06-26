@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{% static 'images/casa.webp' %}" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <!-- Static/CSS -->
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link href="glightbox/css/glightbox.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+
+    <!-- Title -->
+    <title>JHG Builders INC</title>
+  </head>
+
+  <body>
+	  {% include "includes/header.html" %}
+	  <!-- <div class="modal-form mfp-hide mfp-with-anim" id="modal-form">
+
+		 <div class="modal-form-head">
+			<div class="modal-form-logo">
+				<img src="images/casa.webp" alt="Construction">
+			</div>
+			<div class="modal-form-close">
+				<img src="images/close.svg" alt="Close">
+			</div>
+		</div>
+
+		<div class="modal-form-body">
+			<div class="modal-form-title">Request a call</div>
+			<form>
+				<input type="text" placeholder="Your name*" required>
+				<input type="text" placeholder="Your phone*" required>
+				<button class="form-button">Send</button>
+			</form>
+		</div>
+
+	</div> -->
+
+    <div class="go-up">
+      <a href="#">
+        <img src="{% static './images/arrow-up.svg' %}" alt="Go up" />
+      </a>
+    </div>
+
+  {% include "includes/banner.html" %}
+
+  {% include 'includes/about.html' %}
+
+	{% include 'includes/numbers.html' %}
+	{% include 'includes/services.html' %}
+
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    {% include 'includes/galery.html' %}
+	
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+    <!--------------------------- ESCRIPT GALERIA BY JHONATAN------------------------>
+	
+	{% include 'includes/why.html' %}
+    <!-- <div class="s-partners" id="s-partners">
+		<div class="partners-row">
+			<div class="partners-item"><img src="images/partner-1.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-2.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-3.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-4.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-5.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-1.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-2.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-3.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-4.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-5.svg" alt="partner"></div>
+		</div>
+	</div> -->
+    {% include 'includes/contact.html' %}
+    {% include 'includes/footer.html' %}
+
+    <script src="{% static 'js/jquery-3.7.0.min.js' %}"></script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

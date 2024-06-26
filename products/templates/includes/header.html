@@ -1,0 +1,138 @@
+{% load static %}
+<header class="site-header">
+
+    <div class="header-top">
+        <div class="container">
+            <div class="header-row">
+
+                <!-- Header top mobile START -->
+                <div class="header-mobile-logo">
+                    <a href="#">
+                        <img src="{% static './images/casa.webp' %}" alt="Construction">
+                    </a>
+                </div>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Header top mobile END -->
+
+                <div class="header-desc"></div>
+                <div class="header-right">
+                    <div class="header-info">
+                        <img src="{% static './images/location.svg' %}" alt="ул. Гагарина 5Б г. Сочи">
+                        <span>10-11 Nameoke St, Far Rockaway, NY 11691</span>
+                    </div>
+                    <a href="tel:5167246709" class="header-info text-decoration-none text-warning">
+                        <img src="{% static './images/location.svg' %}" alt="(516) 724 6709">
+                        <span class="">(516) 724 6709</span>
+                    </a>
+
+                    <div class="header-social">
+                        <a href="https://www.instagram.com/j.h.g.buildersinc?utm_source=qr&igsh=YmE3emwwNTFtZ2Nj"
+                            target="_blank">
+                            <img src="{% static './images/social-twitter.svg' %}" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/share/GT2S4rvhYbtS2Hyt/?mibextid=kFxxJD" target="_blank">
+                            <img src="{% static './images/social-facebook.svg' %}" alt="Facebook">
+                        </a>
+                        <a href="https://wa.me/+15167246709?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20su%20trabajo%20en%20JHG%20Builders%20Inc."
+                            target="_blank">
+                            <img src="{% static './images/whatsapp.svg' %}" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-bottom-row">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="{% static './images/casa.webp' %}" alt="Construction">
+                    </a>
+                </div>
+
+                <nav class="header-nav">
+                    <ul>
+                        <li><a class="anchor-link text-decoration-none  " href="#s-about">About us</a></li>
+                        <li><a class="anchor-link text-decoration-none " href="#s-services">Services</a></li>
+                        <li><a class="anchor-link text-decoration-none " href="#s-gallery">Gallery</a></li>
+                        <li><a class="anchor-link text-decoration-none " href="#s-contact">Contact</a></li>
+                        <li><a class="anchor-link text-decoration-none " href="admin.html">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header mobile START -->
+    <div class="header-mobile-wrap">
+        <nav class="header-mobile-nav">
+            <ul>
+                <li><a class="anchor-link text-decoration-none text-white" href="#s-about">About us</a></li>
+                <li><a class="anchor-link text-decoration-none text-white" href="#s-services">Services</a></li>
+                <li><a class="anchor-link text-decoration-none text-white" href="#s-gallery">Gallery</a></li>
+                <li><a class="anchor-link text-decoration-none text-white" href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-mobile-info">
+            <img src="{% static './images/location.svg' %}" alt="ул. Гагарина 5Б г. Сочи">
+            <span>10-11 Nameoke St, Far Rockaway, NY 11691</span>
+        </div>
+        <a href="tel:5167246709" class="header-mobile-info text-decoration-none text-white">
+            <img src="{% static './images/phone.svg' %}" alt="(516) 724 6709">
+            <span>(516) 724 6709</span>
+        </a>
+
+        <div class="header-mobile-social">
+            <a href="https://www.instagram.com/j.h.g.buildersinc?utm_source=qr&igsh=YmE3emwwNTFtZ2Nj"
+                target="_blank">
+                <img src="{% static './images/social-twitter.svg' %}" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/share/GT2S4rvhYbtS2Hyt/?mibextid=kFxxJD" target="_blank">
+                <img src="{% static './images/social-facebook.svg' %}" alt="Facebook">
+            </a>
+            <a  href="https://wa.me/+15167246709?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20su%20trabajo%20en%20JHG%20Builders%20Inc."
+                target="_blank">
+                <img src="{% static './images/whatsapp.svg' %}" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+    <!-- Header mobile END -->
+
+</header>
+<style>
+.header-nav {
+	padding: 10px 80px;
+	
+}
+.header-nav ul {    
+    display: flex;
+	list-style-type: none;
+	padding: 0;
+	justify-content: space-between;
+    align-items: end    ;
+    text-decoration: none;
+    margin: 15px 0;
+
+	
+}
+.header-nav ul li a {
+    color: #000;
+	transition: color 0.2s ease;
+    margin: 0 10px;
+}
+.header-nav ul li a:hover {
+	text-shadow: 1px 1px 1px black;
+	color: #ffffff;
+}
+.header-info a:hover{
+    color: rgb(242, 255, 0);
+}
+</style>

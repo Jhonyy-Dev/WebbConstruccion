@@ -1,0 +1,28 @@
+{% load static %}
+<section class="s-form" id="s-contact">
+  <div class="container">
+    <div class="form-row">
+      <div class="form-left">
+        <h2 class="def-title">Do you have any questions?</h2>
+        <div class="def-desc">
+          If you have any questions or would like to order our services from us,
+          please fill out the form on the right. Our managers work around the
+          clock and will call you back during the day.
+        </div>
+        <div class="form-image">
+          <img src="{% static './images/form-bg.webp' %}" alt="Feedback form" />
+        </div>
+      </div>
+
+      <div class="form-right">
+        <form>
+          <input type="text" placeholder="Your name*" required />
+          <input type="text" placeholder="Your phone*" required />
+          <input type="text" placeholder="Your email" />
+          <textarea cols="30" rows="5" placeholder="Comment"></textarea>
+          <button class="def-btn form-button">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

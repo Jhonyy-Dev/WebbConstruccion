@@ -1,0 +1,21 @@
+{% load static %}
+
+<section class="s-gallery" id="s-gallery">
+    <div class="container">
+        <h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Photo gallery</h2>
+
+        <div class="gallery-wrap">
+            {% for product in products %}
+            <a href="{{ product.image.url }}" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.2s">
+                <span class="gallery-border"></span>
+                <img src="{{ product.image.url }}" alt="{{ product.title }}">
+            </a>
+            {% endfor %}
+        </div>
+  
+        <div class="gallery-btn">
+            <a href="#" class="def-btn wow fadeInUp text-decoration-none " data-wow-delay="0.2s">Show more</a>
+        </div>
+        
+    </div>
+</section>
